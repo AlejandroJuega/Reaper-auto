@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reaper OS</title>
+<link rel="stylesheet" href="style/main.css">
+</head>
+<body class="desktop">
+
+<!-- 🔸 BARRA SUPERIOR: hora + clima -->
+<div class="status-bar">
+  <div class="clock">
+    <div id="time">--:--</div>
+    <div id="date">-- -- ----</div>
+  </div>
+  <div class="weather">
+    <img id="wicon" src="" alt="" width="40" height="40">
+    <div>
+      <div id="wtemp">--°C</div>
+      <div id="wcond">--</div>
+    </div>
+  </div>
+</div>
+
+<!-- 🔸 ICONOS DE APPS -->
+<div class="apps">
+  <div class="app" onclick="openApp('apps/spotify.html')">
+    <img src="assets/icons/spotify.png" class="icon">
+    <p>Spotify</p>
+  </div>
+  <div class="app" onclick="openApp('apps/maps.html')">
+    <img src="assets/icons/maps.png" class="icon">
+    <p>Maps</p>
+  </div>
+  <div class="app" onclick="openApp('apps/phone.html')">
+    <img src="assets/icons/phone.png" class="icon">
+    <p>Teléfono</p>
+  </div>
+  <div class="app" onclick="openApp('apps/settings.html')">
+    <img src="assets/icons/settings.png" class="icon">
+    <p>Configuración</p>
+  </div>
+</div>
+
+<!-- 🔸 BARRA INFERIOR -->
+<div class="taskbar">
+  <button class="home" onclick="goHome()">Home</button>
+  <div class="slots">
+    <div class="slot"></div><div class="slot"></div>
+    <div class="slot"></div><div class="slot"></div><div class="slot"></div>
+  </div>
+</div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
