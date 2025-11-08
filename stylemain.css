@@ -1,0 +1,52 @@
+/* --- GENERAL --- */
+body,html{
+  margin:0;padding:0;
+  font-family:"Segoe UI",sans-serif;
+  color:#fff;
+  overflow:hidden;
+  background:linear-gradient(160deg,#0D1A2E,#0D1A2E);
+  transition:background 1s ease,color .5s ease;
+}
+
+/* --- BARRA SUPERIOR --- */
+.status-bar{
+  position:absolute;top:15px;left:50%;
+  transform:translateX(-50%);
+  width:85%;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 25px;
+  background:#111b2e;
+  border-radius:15px;
+  box-shadow:0 2px 8px rgba(0,0,0,.4);
+}
+.clock{text-align:left;}
+#time{font-size:26px;font-weight:600;}
+#date{font-size:14px;color:#ccc;}
+.weather{display:flex;align-items:center;gap:10px;font-size:16px;}
+
+/* --- ICONOS --- */
+.apps{
+  display:flex;justify-content:center;flex-wrap:wrap;
+  gap:45px;margin-top:150px;margin-bottom:100px;
+}
+.app{text-align:center;transition:.3s;}
+.icon{width:100px;height:100px;border-radius:15px;background:#222;padding:10px;}
+.app p{margin-top:8px;font-size:18px;transition:color .5s ease;}
+.app:hover{transform:scale(1.1);}
+
+/* --- BARRA INFERIOR --- */
+.taskbar{
+  position:fixed;bottom:0;left:0;width:100%;
+  height:70px;
+  background:linear-gradient(to top,#ddd,#f7f7f7);
+  border-top:2px solid #bbb;
+  display:flex;align-items:center;justify-content:center;gap:30px;
+  color:inherit;
+}
+.home{
+  background:#eaeaea;border:none;
+  padding:10px 18px;border-radius:8px;
+  font-size:16px;font-weight:600;color:#000;cursor:pointer;
+}
+.slots{display:flex;gap:10px;}
+.slot{width:50px;height:50px;background:#333;border-radius:8px;}
